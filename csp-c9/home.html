@@ -1,0 +1,113 @@
+<html>
+<head>
+    <title>Aquaculture</title>
+<link rel="icon" href="logo1.jpg"></link> 
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function redirectToPage() {
+            let language = document.getElementById("language").value;
+            let fish = document.getElementById("fish").value;
+
+ 		if (language == "English" && fish == "Tilapai") {
+                let url = "Tilapai.html"; 
+                window.location.href = url;
+            }
+
+            else if(language == "English" && fish == "Rohu") {
+                let url = "rohu.html"; 
+                window.location.href = url;
+            }
+            else if(language == "English" && fish == "Roopchand") {
+                let url = "roopchand.html";
+                window.location.href = url;
+            }
+            else if(language == "English" && fish == "Pangasius") {
+                let url = "pangasius.html";
+                window.location.href = url;
+            }
+ else if(language == "Telugu" && fish == "Tilapai") {
+                let url = "TilapaiTelugu.html";
+                window.location.href = url;
+            }
+		
+            else if(language == "Telugu" && fish == "Rohu") {
+                let url = "rohutelugu.html";
+                window.location.href = url;
+            }
+            else if(language == "Telugu" && fish == "Roopchand") {
+                let url = "roopchandtelugu.html";
+                window.location.href = url;
+            }
+            else if(language == "Telugu" && fish == "Pangasius") {
+                let url = "pangasiustelugu.html";
+                window.location.href = url;
+            }
+            else  {
+                alert("Please select both language and fish name before submitting.");
+            }
+        }
+    </script>
+</head>
+
+    <nav>
+        <header><img src="logo.jpg" ></header>
+        <marquee><h1 id="t3">Aquaculture<br>Temperature Management</h1></marquee>
+        
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body >
+
+    <!-- Hamburger Menu Icon -->
+    <div class="menu-icon" onclick="toggleMenu()">
+        <img src="n2.jpg" alt="Menu Icon" />
+    </div>
+
+    <!-- Menu Links -->
+    <div class="menu" id="menu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            
+            <li><a href="services.html">Services</a></li>
+            <li><a href="modifications.php"></a></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+   
+    </nav>
+
+    <div class="villain">
+        <div class="form-box">
+            <form class="hero">
+                <label>Select Language</label>
+                <select id="language">
+                    <option>Select Language</option>
+                    <option>English</option>
+                    <option>Telugu</option>
+
+                </select><br><br>
+                <label>Fish Name</label>
+                <select id="fish">
+                    <option>Select Fish</option>
+<option>Tilapai</option>
+                    <option>Rohu</option>
+                    <option>Pangasius</option>
+                    <option>Roopchand</option>
+                </select>
+                <br><br>
+                <div>
+                    <input type="button" class='btn-custom' id='t1'value="Submit" onclick="redirectToPage()">
+                    <input type="reset" class='btn-custom' id='t2' value="Reset">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

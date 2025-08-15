@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquaculture Homepage</title>
+    <link rel="icon" href="n1.jpeg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+h1{
+            font-family:'Times New Roman';
+            font-size:'30px';
+            text-align:center;
+            color:rgb(245, 246, 245)
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        .hero {
+            background-image: url('h1.jpeg'); /* Replace with your image URL */
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: white;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Faded overlay */
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding-top: 10%;
+        }
+        .btn-custom {
+            background-color: #092159; /* Button color */
+            color: white; 
+            height:40px;
+        }
+        .btn-custom:hover {
+            background-color: red; 
+            color:white/* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="hero">
+    
+        <div class="hero-content">
+            
+            <marquee width="60%" direction="down" height="100px">
+            <h1>Welcome To</h1></marquee>
+            <h1>Temperature Control Strategies for Enhanced Aquaculture Productivity</h1>
+            
+            <button class="btn btn-custom" onclick="navigateToNextPage()">Click Here</button>
+        </div>
+    </header>
+
+    <script>
+        function navigateToNextPage() {
+            window.location.href = 'home.html';
+        }
+    </script>
+
+</body>
+</html>
